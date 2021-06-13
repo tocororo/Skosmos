@@ -719,6 +719,9 @@ msgstr "Скачать этот словарь в SKOS/RDF:"
 msgid "Help"
 msgstr "Помощь"
 
+msgid "For Developers"
+msgstr "для разработчиков"
+
 #: /tmp/cache/587c83c13194c/ab/abd3710fda280028e428e4bc415383b12c9a30cc34eadffd21ff4130ae796b99.php:142
 msgid "Hidden terms"
 msgstr "Скрытые термины"

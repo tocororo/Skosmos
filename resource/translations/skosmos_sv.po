@@ -728,6 +728,9 @@ msgstr "Ladda ned denna vokabulär i SKOS/RDF-format:"
 msgid "Help"
 msgstr "Hjälp"
 
+msgid "For Developers"
+msgstr "för utvecklare"
+
 #: /tmp/cache/587c83509f047/ab/abd3710fda280028e428e4bc415383b12c9a30cc34eadffd21ff4130ae796b99.php:142
 msgid "Hidden terms"
 msgstr "Dolda termer"

@@ -1,5 +1,5 @@
 a, a.versal, .jstree-node > .jstree-anchor {
-    color: #007e3e;
+    color: #007e3e !important;
 }
 a:hover {
     color: #373131;
@@ -13,33 +13,23 @@ a:hover {
 }
 
 .topbar{
-    min-height: 80px;
-    /* background-image: url('../pics/vocabs.svg'); */
-    background-repeat: no-repeat;
-    background-size: auto 50px;
-    background-position-y: center;
-    background-position-x: 25px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: #f5f5f5;
-    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
-    width: 100%;
-    min-height: 80px;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: auto 50px;
-    background-position-y: center;
-    background-position-x: 25px;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 80px !important;
+  justify-content: space-between;
 }
 #topbar-language-navigation:before {
   content: none;
 }
 .topbar:after {
-  content: none;
+  content: none !important;
 }  
 .topbar-white {
     background-color: #f5f5f5;
@@ -53,32 +43,40 @@ a:hover {
     background: #f5f5f5;
 }
 
+#navigation {
+  max-width: none !important;
+}
+
 .headerbar-coloured {
-    background-color: #007e3e;
+    background-color: #007e3e !important;
 }
 
 .header-left > h1 {
-    background-color: #007e3e;
+    background-color: #007e3e !important;
+}
+
+.search-vocab-text {
+  background-color: #373131 !important;
 }
 
 #search-all-button {
-    background-color: #373131;
+    background-color: #373131 !important;
 }
 
 #lang-dropdown-toggle, .multiselect {
-    background-color: #373131;
+    background-color: #373131 !important;
 }
 
 #feedback-vocid {
-    color: #007e3e;
+    color: #007e3e !important;
 }
 
 #feedback-vocid:hover, #feedback-vocid:focus, #feedback-vocid:active {
-    color: #007e3e;
+    color: #007e3e !important;
 }
 
 .feedback-box input, .feedback-box select, .feedback-box textarea {
-    color: #007e3e;
+    color: #007e3e !important;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -95,23 +93,23 @@ a:hover {
 }
 
 #send-feedback {
-    background-color: #373131;
+    background-color: #373131 !important;
 }
 
 .pagination > li > a, .pagination > li > a:hover, #sidebar > .pagination > .active > a, .pagination > li > span {
-    color:#373131;
+    color:#373131 !important;
 }
 
 .nav-tabs, #groups > a {
-    color: #007e3e
+    color: #007e3e !important;
 }
 
 .nav-tabs > li > a, .nav-tabs > li > p, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
-    color: #007e3e
+    color: #007e3e !important;
 }
 
 #alpha > a {
-    color: #007e3e
+    color: #007e3e !important;
 }
 .flex{
     display: flex;
@@ -121,13 +119,23 @@ a:hover {
 .items-center{
     align-items: center;
 }
+.justify-between{
+  justify-content: space-between !important;
+}
+
+.copy-clipboard {
+  color: #007e3e !important;
+}
 
 .dropdown-menu{
-    top:auto;
+    top: 40px;
     border: none;
     border-radius: 4px;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
     pointer-events: auto;
+    z-index: 9002 !important;
+    width: 280px;
+    padding: 16px 0;
 }
 .dropdown-toggle::after{
     content: none;
@@ -136,12 +144,42 @@ a:hover {
     flex-direction: column;
 }
 hr{
-    margin: 4px 8px;
+  margin: 16px 8px !important;
+}
+#list-app{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+span.ripple{
+  position: absolute;
+  top: 0px;
+  left: -7px;
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  /* flex-shrink: 0; */
+  /* line-height: 40px; */
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms cubic-bezier(0, 0, 0.03, 0.37);
+  background-color: rgb(108 108 108 / 70%);
+}
+@keyframes ripple {
+  to{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+#list-app > a.dropdown-toggle:hover{
+  background-color: transparent !important;
 }
 
 #list-app > .multiselect-container > li.active > a, .multiselect-container > li > a:focus, .dropdown-menu > li:hover > a, .dropdown-menu > .active:focus > a, .dropdown-menu > .active:hover > a  {
-    background-color:unset;
-    color:unset;
+    background-color:unset  !important;
+    color:unset  !important;
   }
 @media (max-width: 400px) {
 
@@ -313,7 +351,7 @@ hr{
   #list-app > .dropdown-menu {
     position: absolute;
     right: 0;
-    top: auto;
+    top: 40px;
   }
   #navigation {
     padding-right: 0;

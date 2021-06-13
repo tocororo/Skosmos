@@ -12,6 +12,7 @@
     <a href="{% if request.vocabid and vocab.title%}{{ request.vocabid }}/{% endif %}{{ request.lang }}/feedback{% if request.contentLang and request.contentLang != request.lang %}?clang={{ request.contentLang }}{% endif %}{% if request.queryParam('anylang') == 'on' %}{% if request.contentLang == request.lang %}?{% else %}&{% endif %}anylang=on{% endif %}" id="navi3" class="navigation-font">
     {% trans "Feedback" %}
     </a>
+    <a href="/swagger/index.html" id="navi5" tabindex="0" class="navigation-font">{% trans "For Developers" %}</a>
     <span id="navi4" tabindex="0" title="{% trans "helper_help" %}<br /><br />{% trans "search_example_text" %}">
       <span class="navigation-font">{% trans "Help" %}</span>
     </span>
@@ -22,10 +23,11 @@
     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
       <img src="resource/pics/apps-black-18dp.svg">
     </a>
+    {# <span class="ripple"></span> #}
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
       <li class="flex"><a class="dropdown-item" href="https://sceiba.cu/"><img src="resource/pics/sceiba.svg" alt=""></a></li>
       <hr>
-      <div class="flex">
+      <div class="flex justify-between">
           <li><a class="dropdown-item" href="https://sceiba.cu/"><img src="resource/pics/catalog.svg" alt=""></a></li>
           <li><a class="dropdown-item" href="https://sceiba.cu/"><img src="resource/pics/organizacion.svg" alt=""></a></li>
           <li><a class="dropdown-item" href="https://sceiba.cu/"><img src="resource/pics/vocabs.svg" alt=""></a></li>
